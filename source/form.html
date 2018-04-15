@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Седона - Отзывы</title>
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="container">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+
+      <section class="promo">
+        <img class="promo__image-text" src="http://placehold.it/229x39" width="229" height="39" alt="Sedona">
+      </section>
+
+      <section class="feedback">
+        <header class="feedback__header">
+          <h1 class="feedback__title">Оставьте свой отзыв</h1>
+          <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </header>
+
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="feedback__fieldset fieldset">
+            <legend class="fieldset__legend">Представьтесь:</legend>
+            <label class="fieldset__label">
+              <span class="fieldset__text">Имя*</span>
+              <input class="fieldset__input" type="text" placeholder="Петр" required>
+            </label>
+            <label class="fieldset__label">
+              <span class="fieldset__text">Фамилия*</span>
+              <input class="fieldset__input" type="text" placeholder="Иванов" required>
+            </label>
+            <label class="fieldset__label">
+              <span class="fieldset__text">Отчество</span>
+              <input class="fieldset__input" type="text" placeholder="Александрович">
+            </label>
+          </fieldset>
+
+          <fieldset class="feedback__fieldset fieldset">
+            <legend class="fieldset__legend">Контактная информация:</legend>
+            <label class="fieldset__label fieldset__label--full-width">
+              <span class="fieldset__text">Контактный телефон*</span>
+              <input class="fieldset__input fieldset__input--tel" type="tel" placeholder="Введите телефон" required>
+            </label>
+            <label class="fieldset__label fieldset__label--full-width">
+              <span class="fieldset__text">Электронная почта*</span>
+              <input class="fieldset__input fieldset__input--email" type="email" placeholder="Введите e-mail" required>
+            </label>
+          </fieldset>
+
+          <fieldset class="feedback__fieldset fieldset">
+            <legend class="fieldset__legend">Ваше общее впечатление:</legend>
+            <label class="fieldset__label">
+              <input class="fieldset__input visually-hidden" type="radio" name="experience" value="positive">
+              <span class="fieldset__icon fieldset__icon--radio"></span>
+              <span class="fieldset__text fieldset__text--small-bold">Скорее положительное</span>
+            </label>
+            <label class="fieldset__label">
+              <input class="fieldset__input visually-hidden" type="radio" name="experience" value="negative">
+              <span class="fieldset__icon fieldset__icon--radio"></span>
+              <span class="fieldset__text fieldset__text--small-bold">Скорее отрицательное</span>
+            </label>
+            <label class="fieldset__label">
+              <input class="fieldset__input visually-hidden" type="radio" name="experience" value="dont_know">
+              <span class="fieldset__icon fieldset__icon--radio"></span>
+              <span class="fieldset__text fieldset__text--small-bold">Затрудняюсь ответить</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="feedback__fieldset fieldset">
+            <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
+            <label class="fieldset__label">
+              <input class="fieldset__input visually-hidden" type="checkbox" name="place" value="devils_bridge_trail">
+              <span class="fieldset__icon fieldset__icon--checkbox"></span>
+              <span class="fieldset__text fieldset__text--small-bold">Мост Дьявола</span>
+            </label>
+            <label class="fieldset__label">
+              <input class="fieldset__input visually-hidden" type="checkbox" name="place" value="slide_rock_state_park">
+              <span class="fieldset__icon fieldset__icon--checkbox"></span>
+              <span class="fieldset__text fieldset__text--small-bold">Слайд-парк</span>
+            </label>
+            <label class="fieldset__label">
+              <input class="fieldset__input visually-hidden" type="checkbox" name="place" value="bell_rock">
+              <span class="fieldset__icon fieldset__icon--checkbox"></span>
+              <span class="fieldset__text fieldset__text--small-bold">Гора-Колокол</span>
+            </label>
+            <label class="fieldset__label">
+              <input class="fieldset__input visually-hidden" type="checkbox" name="place" value="red_rocks">
+              <span class="fieldset__icon fieldset__icon--checkbox"></span>
+              <span class="fieldset__text fieldset__text--small-bold">Красные скалы</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="feedback__fieldset fieldset">
+            <legend class="fieldset__legend">Опишите свои эмоции:</legend>
+            <textarea class="fieldset__textarea" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+
+          <button class="feedback__button button" type="submit">Отправить отзыв</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <span class="page-footer__hashtag">#visitsedona</span>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="social__link social__link--tw" href="https://twitter.com/" target="_blank">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="social__link social__link--yt" href="https://www.youtube.com/" target="_blank">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <section class="popup popup--success">
+    <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+    <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте.</p>
+    <button class="popup__button button" type="button">Закрыть окно</button>
+  </section>
+
+  <section class="popup popup--failure">
+    <h2 class="popup__title">Что-то пошло не так!</h2>
+    <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="popup__button button" type="button">Ok</button>
+  </section>
+</body>
+</html>
