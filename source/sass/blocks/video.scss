@@ -1,0 +1,126 @@
+.video {
+  padding-top: 32px;
+  padding-bottom: 39px;
+  text-align: center;
+}
+
+.video__title {
+  margin: 0;
+  margin-bottom: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: $font-size-medium;
+  color: #000000;
+}
+
+.video__text {
+  margin: 0;
+  margin-bottom: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 24px;
+}
+
+.video__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  overflow: hidden;
+}
+
+.video__image {
+  width: 320px;
+  height: 201px;
+}
+
+.video__controls {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  width: 280px;
+  margin: auto;
+  margin-top: -45px;
+  padding: 0;
+  list-style: none;
+}
+
+.video__control {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video__control:nth-child(2) {
+  order: -1;
+}
+
+.video__control:not(:nth-child(2)) {
+  padding-top: 22px;
+  padding-left: 25px;
+  padding-right: 16px;
+  padding-bottom: 24px;
+  background-color: $grey-light;
+}
+
+.video__control:first-child {
+  flex-grow: 1;
+}
+
+.video__control:last-child {
+  padding-right: 23px;
+  padding-left: 15px;
+}
+
+.video__progress-bar {
+  width: 280px;
+  height: 45px;
+  padding-left: 22px;
+  padding-right: 23px;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__bar {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video__bar-pointer {
+  position: absolute;
+  top: -3px;
+  left: 36px;
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video__button {
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  &--reload {
+    width: 16px;
+    height: 20px;
+    background-image: url("../img/icons/icon-video-replay.svg");
+  }
+
+  &--subtitles {
+    width: 32px;
+    height: 20px;
+    background-image: url("../img/icons/icon-video-subtitles.svg");
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icons/icon-video-fullscreen.svg");
+  }
+}

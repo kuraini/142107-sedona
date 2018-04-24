@@ -1,0 +1,32 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include list-reset;
+
+  margin-bottom: 38px;
+}
+
+.socials__item {
+  margin-right: 6px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: $blue-light;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $blue-darker;
+  }
+}

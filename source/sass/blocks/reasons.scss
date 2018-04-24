@@ -1,0 +1,44 @@
+.reasons {
+  display: flex;
+  flex-direction: column;
+}
+
+.reasons__header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+}
+
+.reasons__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+}
+
+.reasons__description {
+  margin: 0;
+}
+
+.reasons__list {
+  display: flex;
+  flex-direction: column;
+
+  @include list-reset;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 38px;
+    background-color: $blue-light;
+    background-image: url("../img/decor/bg-triangle.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 320px 37px;
+  }
+}

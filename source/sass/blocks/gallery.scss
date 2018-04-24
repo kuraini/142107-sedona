@@ -1,0 +1,28 @@
+.gallery__header {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 37px;
+  padding-bottom: 28px;
+  text-align: center;
+  border-bottom: 1px solid $grey-darker;
+}
+
+.gallery__title {
+  margin: 0;
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+}
+
+.gallery__description {
+  margin: 0;
+  line-height: 24px;
+}
+
+.gallery__wrapper {
+  display: flex;
+  flex-direction: column;
+}

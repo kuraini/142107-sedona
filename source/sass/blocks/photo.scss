@@ -1,0 +1,33 @@
+.photo {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $grey-darker;
+}
+
+.photo__link {
+  display: block;
+  width: 280px;
+  height: 280px;
+}
+
+.photo__description {
+  padding-top: 14px;
+  padding-bottom: 8px;
+}
+
+.photo__footer {
+  line-height: 24px;
+}
+
+.photo__title {
+  margin: 0;
+  font-size: $font-size-small;
+  color: #000000;
+}
+
+.photo__author {
+  margin: 0;
+  text-transform: none;
+}
