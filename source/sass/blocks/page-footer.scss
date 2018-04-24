@@ -1,0 +1,38 @@
+.page-footer {
+  padding-top: 35px;
+  padding-bottom: 23px;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-footer__hashtag {
+  margin-bottom: 37px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: $line-height-medium;
+  color: #000000;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  line-height: $line-height-medium;
+  color: #000000;
+}
+
+.page-footer__link {
+  display: block;
+  width: 28px;
+  height: 35px;
+  margin-left: 11px;
+  background-color: $blue;
+}

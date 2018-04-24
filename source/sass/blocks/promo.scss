@@ -1,0 +1,26 @@
+.promo {
+  display: flex;
+  min-height: 158px;
+  padding-top: 52px;
+  background-color: #e4f1f9;
+  background-image: url("../img/decor/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+
+  &--index {
+    min-height: 389px;
+    padding-top: 90px;
+  }
+}
+
+.promo__image-text {
+  width: 229px;
+  height: 39px;
+  margin: 0 auto;
+}
+
+.promo--index .promo__image-text {
+  width: 282px;
+  height: 214px;
+}

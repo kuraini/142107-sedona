@@ -1,0 +1,31 @@
+.page-header {
+  position: relative;
+  min-height: 56px;
+}
+
+.page-header__container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.page-header__logo-wrapper {
+  order: 2;
+  position: relative;
+  min-height: 56px;
+}
+
+.page-header__logo-link {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 102px;
+  height: 83px;
+  transform: translateX(-50%);
+}
+
+.page-header__logo-image {
+  width: 102px;
+  height: 83px;
+}

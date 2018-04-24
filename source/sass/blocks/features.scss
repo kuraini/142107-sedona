@@ -1,0 +1,42 @@
+.features {
+  display: flex;
+  flex-direction: column;
+
+  @include list-reset;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 38px;
+  background-color: #ffffff;
+}
+
+.features__item {
+  display: flex;
+  padding-top: 19px;
+}
+
+.features__icon {
+  width: 40px;
+  height: 43px;
+  margin-right: 10px;
+  background: $blue-light;
+}
+
+.features__description {
+  width: 230px;
+  padding-top: 9px;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+}
+
+.features__text {
+  margin: 0;
+  line-height: $line-height-small;
+}
