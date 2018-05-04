@@ -2,42 +2,43 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона - Фото</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__container">
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__container">
 
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo-link" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
-          </a>
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo-link" href="index.html">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+            </a>
+          </div>
+
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  main-nav__link--active">Фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </header>
 
-        <nav class="main-nav main-nav--opened">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main class="page-main">
-      <div class="page-main__container">
+      <main class="page-main">
 
         <section class="promo">
           <img class="promo__image-text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
@@ -50,7 +51,7 @@
           </header>
 
           <div class="gallery__wrapper">
-            <article class="photo">
+            <article class="photo photo--full-width">
               <a class="photo__link" href="#">
                 <img class="photo__image" src="img/photo/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Дорога на фоне гор">
               </a>
@@ -59,9 +60,9 @@
                   <h3 class="photo__title">Неродные просторы</h3>
                   <p class="photo__author">Автор фото: Борис</p>
                 </div>
-                <div class="photo__like like">
-                  <button class="like__button" type="button">Поставить лайк</button>
-                  <span class="like__number">1350</span>
+                <div class="photo__like">
+                  <button class="photo__like-button" type="button">Поставить лайк</button>
+                  <span class="photo__like-number">1350</span>
                 </div>
               </footer>
             </article>
@@ -74,9 +75,9 @@
                   <h3 class="photo__title">Местная растительность</h3>
                   <p class="photo__author">Автор фото: Сергей</p>
                 </div>
-                <div class="photo__like like">
-                  <button class="like__button" type="button">Поставить лайк</button>
-                  <span class="like__number">143</span>
+                <div class="photo__like">
+                  <button class="photo__like-button" type="button">Поставить лайк</button>
+                  <span class="photo__like-number">143</span>
                 </div>
               </footer>
             </article>
@@ -89,9 +90,9 @@
                   <h3 class="photo__title">Дорога на север</h3>
                   <p class="photo__author">Автор фото: Петр</p>
                 </div>
-                <div class="photo__like like">
-                  <button class="like__button" type="button">Поставить лайк</button>
-                  <span class="like__number">96</span>
+                <div class="photo__like">
+                  <button class="photo__like-button" type="button">Поставить лайк</button>
+                  <span class="photo__like-number">96</span>
                 </div>
               </footer>
             </article>
@@ -104,9 +105,9 @@
                   <h3 class="photo__title">Мост Дьявола</h3>
                   <p class="photo__author">Автор фото: Антон</p>
                 </div>
-                <div class="photo__like like">
-                  <button class="like__button" type="button">Поставить лайк</button>
-                  <span class="like__number">254</span>
+                <div class="photo__like">
+                  <button class="photo__like-button" type="button">Поставить лайк</button>
+                  <span class="photo__like-number">254</span>
                 </div>
               </footer>
             </article>
@@ -125,7 +126,7 @@
               <li class="video__control">
                 <div class="video__progress-bar">
                   <div class="video__bar">
-                    <div class="video__bar-pointer"></div>
+                    <button class="video__bar-pointer" type="button"></button>
                   </div>
                 </div>
               </li>
@@ -138,36 +139,38 @@
             </ul>
           </div>
         </section>
-      </div>
-    </main>
+      </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__container">
-        <span class="page-footer__hashtag">#visitsedona</span>
-        <ul class="socials">
-          <li class="socials__item">
-            <a class="socials__link socials__link--tw" href="https://twitter.com/" target="_blank">
-              <span class="visually-hidden">Twitter</span>
+      <footer class="page-footer">
+        <div class="page-footer__container">
+          <span class="page-footer__hashtag">#visitsedona</span>
+          <ul class="page-footer__socials socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--tw" href="https://twitter.com/" target="_blank">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="https://www.facebook.com/" target="_blank">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--yt" href="https://www.youtube.com/" target="_blank">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <p class="page-footer__copyright">
+            <span class="page-footer__text">Разработано</span>
+            <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <span class="visually-hidden">HTML Academy</span>
             </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--fb" href="https://www.facebook.com/" target="_blank">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--yt" href="https://www.youtube.com/" target="_blank">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <p class="page-footer__copyright">
-          <span class="page-footer__text">Разработано</span>
-          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <span class="visually-hidden">HTML Academy</span>
-          </a>
-        </p>
-      </div>
-    </footer>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+  <script src="js/main.js"></script>
   </body>
 </html>

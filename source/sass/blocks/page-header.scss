@@ -6,12 +6,12 @@
 .page-header__container {
   display: flex;
   flex-direction: column;
-  width: 320px;
 }
 
 .page-header__logo-wrapper {
   order: 2;
   position: relative;
+  z-index: 1;
   min-height: 56px;
 }
 
@@ -28,4 +28,15 @@
 .page-header__logo-image {
   width: 102px;
   height: 83px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 102px;
+    height: 83px;
+  }
 }

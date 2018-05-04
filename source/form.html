@@ -2,42 +2,43 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона - Отзывы</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__container">
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__container">
 
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo-link" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
-          </a>
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo-link" href="index.html">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+            </a>
+          </div>
+
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </header>
 
-        <nav class="main-nav main-nav--opened">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main class="page-main">
-      <div class="page-main__container">
+      <main class="page-main">
 
         <section class="promo">
           <img class="promo__image-text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
@@ -54,15 +55,15 @@
               <legend class="fieldset__legend">Представьтесь:</legend>
               <div class="fieldset__wrapper">
                 <div class="fieldset__inner">
-                  <label class="fieldset__label" for="first-name">Имя*</label>
+                  <label class="fieldset__label" for="first-name">Имя*:</label>
                   <input class="fieldset__input" type="text" name="first-name" id="first-name" placeholder="Петр" required>
                 </div>
                 <div class="fieldset__inner">
-                  <label class="fieldset__label" for="second-name">Фамилия*</label>
+                  <label class="fieldset__label" for="second-name">Фамилия*:</label>
                   <input class="fieldset__input" type="text" name="second-name" id="second-name" placeholder="Иванов" required>
                 </div>
                 <div class="fieldset__inner">
-                  <label class="fieldset__label" for="patronymic">Отчество</label>
+                  <label class="fieldset__label" for="patronymic">Отчество:</label>
                   <input class="fieldset__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
                 </div>
               </div>
@@ -72,11 +73,11 @@
               <legend class="fieldset__legend">Контактная информация:</legend>
               <div class="fieldset__wrapper">
                 <div class="fieldset__inner">
-                  <label class="fieldset__label" for="phone">Контактный телефон*</label>
+                  <label class="fieldset__label" for="phone"><span class="hide">Контактный</span> телефон*:</label>
                   <input class="fieldset__input fieldset__input--tel" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
                 </div>
                 <div class="fieldset__inner">
-                  <label class="fieldset__label" for="mail">Электронная почта*</label>
+                  <label class="fieldset__label" for="mail">Электронная почта*:</label>
                   <input class="fieldset__input fieldset__input--email" type="email" name="email" id="mail" placeholder="Введите e-mail" required>
                 </div>
               </div>
@@ -138,55 +139,58 @@
             </fieldset>
 
             <button class="feedback__button button" type="submit">Отправить отзыв</button>
+            <p class="feedback__info">* — обязательные поля</p>
           </form>
         </section>
-      </div>
-    </main>
+      </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__container">
-        <span class="page-footer__hashtag">#visitsedona</span>
-        <ul class="socials">
-          <li class="socials__item">
-            <a class="socials__link socials__link--tw" href="https://twitter.com/" target="_blank">
-              <span class="visually-hidden">Twitter</span>
+      <footer class="page-footer">
+        <div class="page-footer__container">
+          <span class="page-footer__hashtag">#visitsedona</span>
+          <ul class="page-footer__socials socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--tw" href="https://twitter.com/" target="_blank">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="https://www.facebook.com/" target="_blank">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--yt" href="https://www.youtube.com/" target="_blank">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <p class="page-footer__copyright">
+            <span class="page-footer__text">Разработано</span>
+            <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <span class="visually-hidden">HTML Academy</span>
             </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--fb" href="https://www.facebook.com/" target="_blank">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--yt" href="https://www.youtube.com/" target="_blank">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <p class="page-footer__copyright">
-          <span class="page-footer__text">Разработано</span>
-          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <span class="visually-hidden">HTML Academy</span>
-          </a>
-        </p>
-      </div>
-    </footer>
+          </p>
+        </div>
+      </footer>
 
-    <section class="popup popup--success popup--hidden">
-      <h2 class="popup__title">Ваш отзыв отправлен!</h2>
-      <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
-        В ближайшее время мы опубликуем его на сайте.</p>
-      <div class="popup__wrapper popup__wrapper--bg">
-        <button class="popup__button button" type="button">Закрыть окно</button>
-      </div>
-    </section>
+      <section class="popup popup--success popup--hidden">
+        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+        <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
+          В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="popup__wrapper popup__wrapper--bg">
+          <button class="popup__button button" type="button">Закрыть окно</button>
+        </div>
+      </section>
 
-    <section class="popup popup--failure popup--hidden">
-      <h2 class="popup__title">Что-то пошло не так!</h2>
-      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <div class="popup__wrapper">
-        <button class="popup__button button" type="button">Ok</button>
-      </div>
-    </section>
+      <section class="popup popup--failure popup--hidden">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="popup__wrapper">
+          <button class="popup__button button" type="button">Ok</button>
+        </div>
+      </section>
+    </div>
+
+  <script src="js/main.js"></script>
   </body>
 </html>

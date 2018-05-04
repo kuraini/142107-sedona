@@ -2,42 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__container">
 
-    <header class="page-header">
-      <div class="page-header__container">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo-link">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+            </a>
+          </div>
 
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo-link">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
-          </a>
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </header>
 
-        <nav class="main-nav main-nav--opened">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main class="page-main">
-      <div class="page-main__container">
+      <main class="page-main">
 
         <section class="promo promo--index">
           <h1 class="visually-hidden">Добро пожаловать на сайт о Седоне! Здесь вы можете забронировать гостиницу, посмотреть фото и видео, и оставить свой отзыв о городе.</h1>
@@ -71,21 +71,21 @@
                   <div class="features__icon features__icon--gift"></div>
                   <div class="features__description">
                     <h3 class="features__title">Сувениры</h3>
-                    <p class="features__text">Не только китайского, но и местного производства!</p>
+                    <p class="features__text">Не только китайского,<br> но и местного производства!</p>
                   </div>
                 </li>
                 <li class="features__item">
                   <div class="features__icon features__icon--food"></div>
                   <div class="features__description">
                     <h3 class="features__title">Еда</h3>
-                    <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <p class="features__text">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
                   </div>
                 </li>
               </ul>
             </li>
             <li class="reasons__item reason reason--blue reason--reverse">
               <div class="reason__description">
-                <h2 class="reason__title">Там есть мост Дьявола</h2>
+                <h2 class="reason__title">Там есть мост&nbsp;Дьявола</h2>
                 <span class="reason__number">№2</span>
                 <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
@@ -104,7 +104,7 @@
               <div class="reason__description">
                 <h2 class="reason__title">Красивая дорога</h2>
                 <span class="reason__number">№4</span>
-                <p class="reason__text">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+                <p class="reason__text">Ехать в Седону из Лас&#8209;Вегаса<br> совсем не&nbsp;скучно!</p>
               </div>
             </li>
             <li class="reasons__item reason">
@@ -119,7 +119,7 @@
 
         <section class="hotel">
           <h2 class="hotel__title">Заинтересовались?</h2>
-          <p class="hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+          <p class="hotel__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <a href="hotel.html" class="hotel__button button">Найти гостиницу</a>
         </section>
 
@@ -127,37 +127,38 @@
           <h2 class="visually-hidden">Где мы находимся</h2>
           <img class="map__img" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Адрес: город Седона, штат Аризона, Соединенные Штаны Америки">
         </section>
-      </div>
-    </main>
+      </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__container">
-        <span class="page-footer__hashtag">#visitsedona</span>
-        <ul class="socials">
-          <li class="socials__item">
-            <a class="socials__link socials__link--tw" href="https://twitter.com/" target="_blank">
-              <span class="visually-hidden">Twitter</span>
+      <footer class="page-footer">
+        <div class="page-footer__container">
+          <span class="page-footer__hashtag">#visitsedona</span>
+          <ul class="page-footer__socials socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--tw" href="https://twitter.com/" target="_blank">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="https://www.facebook.com/" target="_blank">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--yt" href="https://www.youtube.com/" target="_blank">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <p class="page-footer__copyright">
+            <span class="page-footer__text">Разработано</span>
+            <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              <span class="visually-hidden">HTML Academy</span>
             </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--fb" href="https://www.facebook.com/" target="_blank">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--yt" href="https://www.youtube.com/" target="_blank">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <p class="page-footer__copyright">
-          <span class="page-footer__text">Разработано</span>
-          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <span class="visually-hidden">HTML Academy</span>
-          </a>
-        </p>
-      </div>
-    </footer>
+          </p>
+        </div>
+      </footer>
+    </div>
 
+  <script src="js/main.js"></script>
   </body>
 </html>

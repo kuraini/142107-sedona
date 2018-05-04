@@ -10,7 +10,7 @@
   padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 6px;
+  //padding-bottom: 6px;
 }
 
 .reasons__title {
@@ -18,11 +18,12 @@
   margin-bottom: 27px;
   font-weight: 700;
   font-size: $font-size-medium;
-  line-height: $line-height-medium;
+  line-height: $line-height-large;
 }
 
 .reasons__description {
   margin: 0;
+  margin-bottom: 6px;
 }
 
 .reasons__list {
@@ -40,5 +41,39 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 320px 37px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__header {
+    padding-top: 49px;
+    padding-bottom: 45px;
+    padding-left: 139px;
+    padding-right: 139px;
+  }
+
+  .reasons__title {
+    margin-bottom: 28px;
+    font-size: $font-size-large;
+  }
+
+  .reasons__title br {
+    display: none;
+  }
+
+  .reasons__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .reasons__list::before {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__header {
+    padding-left: 355px;
+    padding-right: 355px;
   }
 }
