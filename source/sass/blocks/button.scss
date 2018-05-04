@@ -1,16 +1,18 @@
 .button {
+  max-width: 480px;
   padding-top: 15px;
   padding-bottom: 17px;
   padding-left: 15px;
   padding-right: 15px;
   font-family: inherit;
   font-weight: 700;
-  font-size: 21px;
-  line-height: $line-height-medium;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
   color: #ffffff;
   background-color: $blue-light;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {

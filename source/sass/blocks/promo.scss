@@ -24,3 +24,19 @@
   width: 282px;
   height: 214px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    min-height: 290px;
+
+    &--index {
+      min-height: 518px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 301px;
+  }
+}

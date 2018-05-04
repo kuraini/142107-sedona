@@ -15,7 +15,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: $font-size-small;
-  line-height: $line-height-medium;
+  line-height: $line-height-large;
   text-transform: uppercase;
   color: $font-body-color;
   background-color: #ffffff;
@@ -28,4 +28,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  appearance: none;
 }
