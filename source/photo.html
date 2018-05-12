@@ -14,7 +14,11 @@
 
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo-link" href="index.html">
-              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+              </picture>
             </a>
           </div>
 
@@ -53,7 +57,11 @@
           <div class="gallery__wrapper">
             <article class="photo photo--full-width">
               <a class="photo__link" href="#">
-                <img class="photo__image" src="img/photo/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Дорога на фоне гор">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-sunset-desktop@1x.jpg 1x, img/photo/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo/photo-sunset-tablet@1x.jpg 1x, img/photo/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/photo/photo-sunset-mobile@1x.jpg" srcset="img/photo/photo-sunset-mobile@2x.jpg 2x" alt="Дорога на фоне гор">
+                </picture>
               </a>
               <footer class="photo__footer">
                 <div class="photo__description">
@@ -68,7 +76,11 @@
             </article>
             <article class="photo">
               <a class="photo__link" href="#">
-                <img class="photo__image" src="img/photo/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Цветущий кактус на фоне красных скал">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-cactus-desktop@1x.jpg 1x, img/photo/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo/photo-cactus-tablet@1x.jpg 1x, img/photo/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/photo/photo-cactus-mobile@1x.jpg" srcset="img/photo/photo-cactus-mobile@2x.jpg 2x" alt="Цветущий кактус на фоне красных скал">
+                </picture>
               </a>
               <footer class="photo__footer">
                 <div class="photo__description">
@@ -83,7 +95,11 @@
             </article>
             <article class="photo">
               <a class="photo__link" href="#">
-                <img class="photo__image" src="img/photo/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Горный серпантин">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-roads-desktop@1x.jpg 1x, img/photo/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo/photo-roads-tablet@1x.jpg 1x, img/photo/photo-roads-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/photo/photo-roads-mobile@1x.jpg" srcset="img/photo/photo-roads-mobile@2x.jpg 2x" alt="Горный серпантин">
+                </picture>
               </a>
               <footer class="photo__footer">
                 <div class="photo__description">
@@ -98,7 +114,11 @@
             </article>
             <article class="photo">
               <a class="photo__link" href="#">
-                <img class="photo__image" src="img/photo/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo/photo-bridge-desktop@1x.jpg 1x, img/photo/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo/photo-bridge-tablet@1x.jpg 1x, img/photo/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/photo/photo-bridge-mobile@1x.jpg" srcset="img/photo/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                </picture>
               </a>
               <footer class="photo__footer">
                 <div class="photo__description">
@@ -118,7 +138,11 @@
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video__wrapper">
-            <img class="video__image" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видеопрезентация">
+            <picture class="video__image-wrapper">
+              <source media="(min-width: 1200px)" srcset="img/photo/video-desktop@1x.jpg 1x, img/photo/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/video-tablet@1x.jpg 1x, img/photo/video-tablet@2x.jpg 2x">
+              <img class="video__image" src="img/photo/video-mobile@1x.jpg" alt="Видеопрезентация">
+            </picture>
             <ul class="video__controls">
               <li class="video__control">
                 <button class="video__button video__button--reload" type="button">Включить/перезагрузить видео</button>
@@ -171,6 +195,7 @@
       </footer>
     </div>
 
+  <script src="js/picturefill.min.js"></script>
   <script src="js/main.js"></script>
   </body>
 </html>

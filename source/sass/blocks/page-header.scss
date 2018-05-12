@@ -36,7 +36,17 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 102px;
-    height: 83px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-link {
+    width: 187px;
+    height: 97px;
+  }
+
+  .page-header__logo-image {
+    width: 187px;
+    height: 97px;
   }
 }

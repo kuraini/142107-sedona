@@ -30,7 +30,7 @@
   overflow: hidden;
 }
 
-.video__image {
+.video__image-wrapper {
   width: 320px;
   height: 201px;
 }
@@ -84,7 +84,7 @@
 
 .video__bar {
   position: relative;
-  //width: 235px;
+  width: 235px;
   height: 3px;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -157,6 +157,11 @@
     height: 500px;
   }
 
+  .video__image-wrapper {
+    width: 100%;
+    height: 500px;
+  }
+
   .video__controls {
     width: 100%;
     position: absolute;
@@ -193,7 +198,7 @@
   }
 
   .video__bar {
-    //width: 389px;
+    width: 389px;
   }
 
   .video__bar-pointer {
@@ -229,6 +234,6 @@
   }
 
   .video__bar {
-    //width: 539px;
+    width: 539px;
   }
 }
