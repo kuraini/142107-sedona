@@ -147,17 +147,44 @@
 }
 
 .fieldset__radio:checked + .fieldset__icon {
-  &::after {
+  &::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "";
     display: block;
     width: 22px;
     height: 22px;
     background-color: $font-body-color;
     border-radius: 50%;
+  }
+}
+
+.fieldset__checkbox:checked + .fieldset__icon {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 25px;
+    height: 19px;
+    background-image: url("../img/icons/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.fieldset__label:hover .fieldset__icon,
+.fieldset__label:focus .fieldset__icon {
+  background-color: $grey-darker;
+}
+
+.fieldset__label:active .fieldset__icon {
+  background-color: #d5d5d5;
+
+  &::before {
+    opacity: 0.3;
   }
 }
 

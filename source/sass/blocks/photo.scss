@@ -10,6 +10,7 @@
   display: block;
   width: 280px;
   height: 280px;
+  overflow: hidden;
 }
 
 .photo__description {
@@ -125,6 +126,15 @@
     &--full-width {
       width: 100%;
     }
+  }
+
+  .photo__link {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo--full-width .photo__link {
+    width: 100%;
   }
 
   .photo__footer {

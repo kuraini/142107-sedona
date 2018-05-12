@@ -18,10 +18,44 @@
 
 .features__icon {
   flex-shrink: 0;
+  position: relative;
   width: 40px;
   height: 43px;
   margin-right: 10px;
-  background: $blue-light;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.features__icon--home::before {
+  top: 0;
+  left: 1px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icons/icon-house.svg");
+  background-size: 39px 37px;
+}
+
+.features__icon--gift::before {
+  top: -1px;
+  left: 5px;
+  width: 32px;
+  height: 38px;
+  background-image: url("../img/icons/icon-gift.svg");
+  background-size: 32px 38px;
+}
+
+.features__icon--food::before {
+  top: 5px;
+  left: -2px;
+  width: 40px;
+  height: 35px;
+  background-image: url("../img/icons/icon-burger.svg");
+  background-size: 40px 35px;
 }
 
 .features__description {
@@ -76,6 +110,30 @@
     height: 76px;
     margin-right: 0;
     margin-bottom: 26px;
+  }
+
+  .features__icon--home::before {
+    top: 4px;
+    left: 3px;
+    width: 75px;
+    height: 72px;
+    background-size: 75px 72px;
+  }
+
+  .features__icon--gift::before {
+    top: 1px;
+    left: 8px;
+    width: 64px;
+    height: 75px;
+    background-size: 64px 75px;
+  }
+
+  .features__icon--food::before {
+    top: 7px;
+    left: 2px;
+    width: 77px;
+    height: 68px;
+    background-size: 77px 68px;
   }
 
   .features__description {
