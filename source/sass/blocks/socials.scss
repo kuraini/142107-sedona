@@ -14,7 +14,7 @@
 }
 
 .socials__link {
-  display: block;
+  display: flex;
   width: 46px;
   height: 48px;
   background-color: $blue-light;
@@ -27,4 +27,13 @@
   &:active {
     background-color: $blue-darker;
   }
+}
+
+.socials__icon {
+  margin: auto;
+  fill: #ffffff;
+}
+
+.socials__link:active .socials__icon {
+  fill: rgba(255, 255, 255, 0.3);
 }

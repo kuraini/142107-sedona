@@ -32,10 +32,21 @@
 
 .page-footer__link {
   display: block;
-  width: 28px;
+  width: 27px;
   height: 35px;
-  margin-left: 11px;
-  background-color: $blue;
+  margin-left: 12px;
+}
+
+.page-footer__academy-icon {
+  fill: #000000;
+}
+
+.page-footer__link:hover .page-footer__academy-icon {
+  fill: $blue-light;
+}
+
+.page-footer__link:active .page-footer__academy-icon {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: $tablet-width) {

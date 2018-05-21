@@ -101,7 +101,42 @@
 
 .fieldset--contacts .fieldset__input {
   width: 100%;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 21px;
   padding-right: 58px;
+  border: none;
+
+  &:focus {
+    padding-top: 11px;
+    padding-bottom: 13px;
+    padding-left: 17px;
+    border: 4px solid $grey-darker;
+  }
+}
+
+.fieldset--contacts .fieldset__input--tel {
+  background: url("../img/icons/icon-phone.svg") 243px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, $grey-light 58px, $grey-light 100%);
+
+  &:hover {
+    background: url("../img/icons/icon-phone.svg") 243px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, #e6e6e6 58px, #e6e6e6 100%);
+  }
+
+  &:focus {
+    background: url("../img/icons/icon-phone.svg") 239px 16px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  54px, #ffffff 54px, #ffffff 100%);
+  }
+}
+
+.fieldset--contacts .fieldset__input--email {
+  background: url("../img/icons/icon-mail.svg") 243px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, $grey-light 58px, $grey-light 100%);
+
+  &:hover {
+    background: url("../img/icons/icon-mail.svg") 243px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, #e6e6e6 58px, #e6e6e6 100%);
+  }
+
+  &:focus {
+    background: url("../img/icons/icon-mail.svg") 239px 16px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  54px, #ffffff 54px, #ffffff 100%);
+  }
 }
 
 .fieldset--experience {
@@ -341,6 +376,30 @@
     margin-bottom: 22px;
   }
 
+  .fieldset--contacts .fieldset__input--tel {
+    background: url("../img/icons/icon-phone.svg") 610px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, $grey-light 58px, $grey-light 100%);
+
+    &:hover {
+      background: url("../img/icons/icon-phone.svg") 610px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, #e6e6e6 58px, #e6e6e6 100%);
+    }
+
+    &:focus {
+      background: url("../img/icons/icon-phone.svg") 606px 16px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  54px, #ffffff 54px, #ffffff 100%);
+    }
+  }
+
+  .fieldset--contacts .fieldset__input--email {
+    background: url("../img/icons/icon-mail.svg") 610px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, $grey-light 58px, $grey-light 100%);
+
+    &:hover {
+      background: url("../img/icons/icon-mail.svg") 610px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, #e6e6e6 58px, #e6e6e6 100%);
+    }
+
+    &:focus {
+      background: url("../img/icons/icon-mail.svg") 606px 16px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  54px, #ffffff 54px, #ffffff 100%);
+    }
+  }
+
   .fieldset--places {
     width: 100%;
     margin-bottom: 50px;
@@ -465,6 +524,30 @@
 
   .fieldset--contacts .fieldset__input {
     width: 314px;
+  }
+
+  .fieldset--contacts .fieldset__input--tel {
+    background: url("../img/icons/icon-phone.svg") 278px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, $grey-light 58px, $grey-light 100%);
+
+    &:hover {
+      background: url("../img/icons/icon-phone.svg") 278px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, #e6e6e6 58px, #e6e6e6 100%);
+    }
+
+    &:focus {
+      background: url("../img/icons/icon-phone.svg") 274px 16px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  54px, #ffffff 54px, #ffffff 100%);
+    }
+  }
+
+  .fieldset--contacts .fieldset__input--email {
+    background: url("../img/icons/icon-mail.svg") 278px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, $grey-light 58px, $grey-light 100%);
+
+    &:hover {
+      background: url("../img/icons/icon-mail.svg") 278px 20px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  58px, #e6e6e6 58px, #e6e6e6 100%);
+    }
+
+    &:focus {
+      background: url("../img/icons/icon-mail.svg") 274px 16px no-repeat, linear-gradient(to left, #e6e6e6 0%, #e6e6e6  54px, #ffffff 54px, #ffffff 100%);
+    }
   }
 
   .fieldset--places {
